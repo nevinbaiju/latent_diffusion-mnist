@@ -19,4 +19,9 @@ def sample():
         train()
 
 if __name__ == "__main__":
+    create_path_if_not_exists('models')
+    create_path_if_not_exists('plots')
+    create_path_if_not_exists(vae_plots_path)
+    create_path_if_not_exists(unet_plots_path)
+    
     sample()
